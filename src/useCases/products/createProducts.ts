@@ -11,12 +11,13 @@ export async function createProduct(req: Request, res: Response) {
       description,
       price: Number(price),
       category,
-      ingredients: JSON.parse(ingredients),
+      ingredients: ingredients ? JSON.parse(ingredients) : [],
       imagePath,
     });
 
     res.status(201).json(product);
   } catch (error) {
+    console.log(error);
     res.status(500).json(error);
   }
 }
