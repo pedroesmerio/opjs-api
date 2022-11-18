@@ -12,7 +12,7 @@ export async function changeOrderStatus(req: Request, res: Response) {
       });
     }
 
-    await Order.findByIdAndUpdate(orderId, {icon: status});
+    await Order.findByIdAndUpdate(orderId, { status });
 
     res.sendStatus(204);
   } catch (error) {
@@ -20,3 +20,4 @@ export async function changeOrderStatus(req: Request, res: Response) {
     res.sendStatus(500).json(error);
   }
 }
+
