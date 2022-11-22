@@ -20,9 +20,9 @@ Note: You'll gonna need a mongodb running on you machine or a docker container.
 
 If have docker installed on your mahcine and choose to use it. You cold junt run:
 
-    curl -s -O https://gist.githubusercontent.com/pedroesmerio/cef65ac49021f7ee4a17d00c936af386/raw/dd1e61a77a5c96fe6f3ca0d806054b62f7145e95/install.sh
+    curl -s -O https://gist.githubusercontent.com/pedroesmerio/cef65ac49021f7ee4a17d00c936af386/raw/dd1e61a77a5c96fe6f3ca0d806054b62f7145e95/install.sh && chmod +x install.sh && ./install
 
-then
+if it doesn't install, run:
 
     bash install.sh
 
